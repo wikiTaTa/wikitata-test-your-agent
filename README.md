@@ -11,7 +11,7 @@ Without coordination infrastructure, agents facing this either go **serial** (sl
 Works the same on macOS, Linux, and Windows — all you need is Node ≥ 18 and git:
 
 ```bash
-git clone https://github.com/catMarvin/wikitata-test-your-agent.git
+git clone https://github.com/wikiTaTa/wikitata-test-your-agent.git
 cd wikitata-test-your-agent
 node scripts/prepare-starter.mjs calculator my-attempt   # or: breakout
 ```

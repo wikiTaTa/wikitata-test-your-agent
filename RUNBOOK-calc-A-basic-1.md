@@ -46,7 +46,7 @@ At the VM host (or in your Screen Sharing view of it): click the desktop, press 
 Copy this whole line, paste it at the prompt, press **Return**:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/catMarvin/wikitata-test-your-agent/main/scripts/run-pilot.sh | bash
+curl -fsSL https://raw.githubusercontent.com/wikiTaTa/wikitata-test-your-agent/main/scripts/run-pilot.sh | bash
 ```
 
 The launcher narrates itself: it checks the VM host, stages the export tool, creates a fresh disposable VM, prints the checklist you'll use in Part 2, and then **turns this terminal into the VM** — a new window opens containing an entire second Mac.
@@ -72,7 +72,7 @@ Inside the VM: press **⌘-space**, type `Terminal`, press **Return**.
 One short line in the VM's Terminal (also printed by the launcher's checklist). It downloads the challenge, starts the 30-second stills camera and the timing log, installs the run tools into `~/tta`, and docks this window to the left:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/catMarvin/wikitata-test-your-agent/main/scripts/vm-setup.sh | bash -s calculator calc-A-basic-1
+curl -fsSL https://raw.githubusercontent.com/wikiTaTa/wikitata-test-your-agent/main/scripts/vm-setup.sh | bash -s calculator calc-A-basic-1
 ```
 
 ✅ **You should now see:** a short narrated list ending in `READY — harness v1.6.12` and `NEXT: ~/tta/begin.sh`.

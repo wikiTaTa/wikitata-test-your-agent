@@ -7,8 +7,8 @@ set -euo pipefail
 HARNESS_VERSION="1.6.28"
 PROJECT="${1:-calculator}"
 RUN_ID="${2:-calc-A-basic-1}"
-RAW="https://raw.githubusercontent.com/catMarvin/wikitata-test-your-agent/main"
-REL="https://github.com/catMarvin/wikitata-test-your-agent/releases/latest/download"
+RAW="https://raw.githubusercontent.com/wikiTaTa/wikitata-test-your-agent/main"
+REL="https://github.com/wikiTaTa/wikitata-test-your-agent/releases/latest/download"
 
 say()  { printf '  %s\n' "$1"; }
 tl()   { printf '%s\tguest\t%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$1" >> "$HOME/tta/run-times.log"; }

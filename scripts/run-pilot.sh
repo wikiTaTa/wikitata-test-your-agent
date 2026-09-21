@@ -33,8 +33,8 @@ RUN_ID="${3:-calc-A-basic-1}"
 VM="run-${RUN_ID}"
 STAGE="$HOME/tta-runs/staging"
 OUT="$HOME/tta-runs/${RUN_ID}"
-RAW="https://raw.githubusercontent.com/catMarvin/wikitata-test-your-agent/main"
-REL="https://github.com/catMarvin/wikitata-test-your-agent/releases/latest/download"
+RAW="https://raw.githubusercontent.com/wikiTaTa/wikitata-test-your-agent/main"
+REL="https://github.com/wikiTaTa/wikitata-test-your-agent/releases/latest/download"
 STEPS=4
 
 IS_TTY=0; [ -t 1 ] && IS_TTY=1

@@ -22,7 +22,7 @@ $SCP "admin@$IP:~/tta/run-times.log"   "$OUT/guest-run-times.log" 2>/dev/null ||
 $SCP "admin@$IP:~/Desktop/recording.mov" "$OUT/recording.mov" 2>/dev/null || \
 $SCP "admin@$IP:~/tta/recording.mov"     "$OUT/recording.mov" 2>/dev/null || echo "  (no recording.mov found — check where QuickTime saved it)"
 $SSH "admin@$IP" "claude mcp list 2>&1 | grep -vE '_(KEY|SECRET|TOKEN)='" > "$OUT/tier-surface-proof.txt" 2>/dev/null || true
-curl -fsSL https://raw.githubusercontent.com/catMarvin/wikitata-test-your-agent/main/tools/run-viewer/index.html -o "$OUT/index.html" \
+curl -fsSL https://raw.githubusercontent.com/wikiTaTa/wikitata-test-your-agent/main/tools/run-viewer/index.html -o "$OUT/index.html" \
   || echo "  (viewer download failed — keeping any existing index.html)"
 # Safari blocks fetch() over file:// — wrap the manifest as a plain script
 # the viewer loads via <script src>, which file:// allows in every browser.
