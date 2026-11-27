@@ -131,7 +131,7 @@ while :; do
     if [ "$STATE" != "done" ]; then STATE=done; echo guide > "$ATTNF"; fi
   elif grep -q "agent_done_finish_started" "$TLOG" 2>/dev/null; then
     # the agent declared done and finish.sh is running — the guide takes
-    # over the prompting (Todd: claude's final step triggers MORE guidance)
+    # over the prompting (catMarvin: claude's final step triggers MORE guidance)
     if [ "$STATE" != "finish" ]; then STATE=finish; echo guide > "$ATTNF"; fi
   else
     case "$STATE" in

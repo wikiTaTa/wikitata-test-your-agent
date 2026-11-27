@@ -118,7 +118,7 @@ ensure_recording_profile() {
 
 # ---- PAGE: welcome + color scheme (repainted WHOLE after every try —
 # applying a profile can reflow the window, so single-row patching is unsafe:
-# it left duplicate status lines on Todd's screen)
+# it left duplicate status lines on catMarvin's screen)
 theme_page() { # $1 = status line ("" = none yet)
   page_top 0
   cy  "   █     █ ██████ █       █████  ████  █     █ ██████"
