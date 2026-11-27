@@ -1,13 +1,13 @@
 #!/bin/bash
 # finish.sh — run when the agent DECLARES DONE (recording still rolling).
-# The elegant wrap (Todd S718): no manual dev-server ask, no Safari ask,
+# The elegant wrap (catMarvin S718): no manual dev-server ask, no Safari ask,
 # no Ctrl-C hunt. It:
 #   1. stamps agent_done;
 #   2. starts the project's dev server (npm run dev, preview fallback) and
 #      opens Safari on it, then AUTO-DRIVES the UNIFORM acceptance battery on
 #      camera as a user would (accept-drive.mjs; keyboard-first for arithmetic,
 #      button-click for scientific) and SCORES it — manual entry only as a
-#      fallback when Safari isn't drivable (v1.6.26, Todd S721);
+#      fallback when Safari isn't drivable (v1.6.26, catMarvin S721);
 #   3. stops the recording, stamps run_end, prints proof + export command
 #      (via end-run.sh — ONE wrap path).
 # Run it in a NEW Terminal window (Command+N) — Claude Code owns MAIN.
@@ -135,7 +135,7 @@ if [ "$SHOWCASE" = "1" ]; then
   fi
   tl acceptance_tests_done
 
-  # keep recording a clean tail of the finished app before stopping (Todd:
+  # keep recording a clean tail of the finished app before stopping (catMarvin:
   # not a 5s wrap — hold ~20s). Configurable via run.conf TTA_WRAP_HOLD.
   HOLD="${TTA_WRAP_HOLD:-20}"
   printf '\033[1;32m   final capture - recording the finished app for %ss...\033[0m\n' "$HOLD"

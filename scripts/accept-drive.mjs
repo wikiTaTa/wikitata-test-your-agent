@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // accept-drive.mjs — drive the finished app's UNIFORM acceptance battery
-// AS A USER WOULD, on camera, and score it. (harness v1.6.26, Todd S721)
+// AS A USER WOULD, on camera, and score it. (harness v1.6.26, catMarvin S721)
 //
 // Method (decided S721): keyboard-first for basic arithmetic (a GRADED
 // PROJECT-BRIEF requirement — "Keyboard entry works"), button-click fallback
